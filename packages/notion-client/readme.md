@@ -2,16 +2,23 @@
   <img alt="React Notion X" src="https://raw.githubusercontent.com/NotionX/react-notion-x/master/media/notion-ts.png" width="689">
 </p>
 
-# notion-client
+# @genthegreat/notion-client
 
-> Robust TypeScript client for the unofficial Notion API.
+> Robust TypeScript client for the unofficial Notion API. Fork of [NotionX/react-notion-x](https://github.com/NotionX/react-notion-x) with PR #600.
 
-[![NPM](https://img.shields.io/npm/v/notion-client.svg)](https://www.npmjs.com/package/notion-client) [![Build Status](https://github.com/NotionX/react-notion-x/actions/workflows/test.yml/badge.svg)](https://github.com/NotionX/react-notion-x/actions/workflows/test.yml) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
+[![NPM](https://img.shields.io/npm/v/@myname/notion-client.svg)](https://www.npmjs.com/package/@myname/notion-client)
+
+## Why this fork?
+
+This package is a fork of [notion-client](https://github.com/NotionX/react-notion-x/tree/master/packages/notion-client) that includes:
+- the fix for the search in PR #600
+
+- this is a temporary fork until the latest version of the original package is released
 
 ## Install
 
 ```bash
-npm install notion-client
+npm install @genthegreat/notion-client
 ```
 
 This package is compatible with server-side V8 contexts such as Node.js, Deno, and Cloudflare Workers.
@@ -19,7 +26,7 @@ This package is compatible with server-side V8 contexts such as Node.js, Deno, a
 ## Usage
 
 ```ts
-import { NotionAPI } from 'notion-client'
+import { NotionAPI } from '@genthegreat/notion-client'
 
 // you can optionally pass an authToken to access private notion resources
 const api = new NotionAPI()
@@ -44,7 +51,7 @@ You can pass a database ID to the `getPage` method. The response is an object wh
 - `collection`
 - `collection_view`
 
-The value of the `block` property maps the id of each block object present in the database to its corresponding properties like type, parent id, created time, last edited by, and more. 
+The value of the `block` property maps the id of each block object present in the database to its corresponding properties like type, parent id, created time, last edited by, and more.
 
 ```
 {
@@ -157,8 +164,12 @@ Example of a block object of type `collection_view`:
 
 See the [full docs](https://github.com/NotionX/react-notion-x).
 
+## Credits
+
+This package is a fork of [notion-client](https://github.com/NotionX/react-notion-x/tree/master/packages/notion-client) by [Travis Fischer](https://transitivebullsh.it) with contributions from [Nguyen Trung Hieu](https://github.com/trunghieu99tt).
+
 ## License
 
-MIT © [Travis Fischer](https://transitivebullsh.it)
+MIT © [Travis Fischer](https://transitivebullsh.it) and [Prince Kwesi](https://github.com/genthegreat)
 
 Support my OSS work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>

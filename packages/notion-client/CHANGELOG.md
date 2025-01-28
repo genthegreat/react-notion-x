@@ -1,5 +1,11 @@
 # notion-client
 
+## 7.1.6-fix-search.1
+
+### Patch Changes
+
+- Fix search PR #600
+
 ## 7.1.6
 
 ### Patch Changes

@@ -11,7 +11,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "turbo build --filter='./packages/*'",
+    "build": "turbo build --filter=notion-types --filter=notion-utils --filter=@genthegreat/notion-client",
     "dev": "turbo dev --concurrency 50 --continue",
     "clean": "turbo clean",
     "test": "turbo test",
